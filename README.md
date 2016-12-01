@@ -48,7 +48,7 @@ var result = trie.find('hello',maxDistance);
 You should remember that performance of the "find" method is critically depends on the maximal distance parameter.
 
 ### Clear
-You can remove clear the trie with "clear" method:
+You can clear the trie with "clear" method:
 ```js
 trie.clear();
 ```
