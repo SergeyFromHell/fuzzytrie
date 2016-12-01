@@ -12,7 +12,10 @@ FuzzyTrie.prototype.add = function(word) {
 			node[c] = {};
 		node = node[c];
 	}
+	if(node[stop])
+		return false;
 	node[stop] = true;
+	return true;
 }
 
 FuzzyTrie.prototype.has = function(word) {
