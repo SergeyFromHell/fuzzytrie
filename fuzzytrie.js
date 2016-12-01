@@ -82,8 +82,7 @@ FuzzyTrie.prototype._empty = function(node) {
 
 FuzzyTrie.prototype.find = function(word,errors) {
 	var result = {};	
-	var stack = '';
-	this._find(word,result,errors,0,0,this._root,stack);
+	this._find(word,result,errors,0,0,this._root,'');
 	for(var k in result) {
 		result[k] = errors - result[k];
 	}
