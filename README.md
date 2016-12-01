@@ -59,3 +59,11 @@ Array of all words contained in the trie can be acquired with "all".
 var a = trie.all();
 // a = [...];
 ```
+
+### Empty
+You can check that trie does not contain any word with "empty" method:
+```js
+var b = trie.empty();
+// b == true if trie is empty (has no words)
+// else, b == false
+```
