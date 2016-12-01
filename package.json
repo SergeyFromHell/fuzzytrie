@@ -1,0 +1,37 @@
+{
+  "author": {
+    "name": "Sergey Fedotov"
+  },
+  "dependencies": {},
+  "description": "Dynamic word set with accelerated exact and fuzzy search based on trie data structure.",
+  "devDependencies": {},
+  "directories": {},
+  "keywords": [
+    "search",
+    "trie",
+    "words",
+    "set",
+    "fuzzy",
+    "unrestricted",
+    "damerau",
+    "levenshtein"
+  ],
+  "license": "WTFPL",
+  "main": "fuzzytrie.js",
+  "maintainers": [
+    {
+      "email": "sergeyfromhell@gmail.com",
+      "name": "sergeyfromhell"
+    }
+  ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/SergeyFromHell/fuzzytrie.git"
+  },
+  "name": "fuzzytrie",
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
