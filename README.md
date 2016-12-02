@@ -34,15 +34,15 @@ b = trie.has('word'); // b == false
 ```
 
 ### Search
-Although you can use "has" to exact search, the is also a method called "find" that can be used to find all words in the trie that "approximately" equals to the given word.
-In fact, "find" implements fuzzy search with [UNRESTRICTED Damerau–Levenshtein Distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance) metric.
-It's accelerated with underlying trie data structure so it's performance is sublinear.
+Although you can use "has" to do exact search, there is also a method called "find" that can be used to find all words in the trie that "approximately" equals to the given word.
+In fact, "find" implements fuzzy search with [UNRESTRICTED Damerau-Levenshtein Distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance) metric.
+It's accelerated with underlying trie data structure so it's performance is sublinear (in terms of number of words inside the trie).
 Maximal distance from given word is passed with second parameter of "find". It returns JavaScript Object with words within given maximal distance as keys and their distances as values.
 If there are no words in the trie within given distance, it returns empty Object({}).
 ```js
 var maxDistance = 2;
 var result = trie.find('hello',maxDistance);
-// r == { <word1>: <distance from 'hello' to word1>, <word2>: <distance from 'hello' to word2>,... };
+// result == { <word1>: <distance from 'hello' to word1>, <word2>: <distance from 'hello' to word2>,... };
 
 ```
 You should remember that performance of the "find" method is critically depends on the maximal distance parameter.
